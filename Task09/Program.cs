@@ -11,8 +11,8 @@
 int number = new Random().Next(10, 100);  // 99 + 1 = 100
 Console.WriteLine($"Случайное число из отрезка от 10 до 99 -> {number}");
 
-int firstDigit = number / 10;
-int secondDigit = number % 10;
+// int firstDigit = number / 10;
+// int secondDigit = number % 10;
 
 // int maxDigit = firstDigit > secondDigit ? firstDigit : secondDigit; // Тернарный оператор
 
