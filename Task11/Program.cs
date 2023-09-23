@@ -11,7 +11,7 @@ int DeleteSecondDigit(int num)
 {
     int firstDigit = num / 100; // 4.56 = 4
     int thrdDigit = num % 10; // 45.6 = 6
-    return firstDigit * 10 + thrdDigit; // 4 * 10 + 6 + 46
+    return firstDigit * 10 + thrdDigit; // 4 * 10 + 6 = 46
 }
 
 int number = new Random().Next(100, 1000);
