@@ -9,13 +9,17 @@
 
 int SecondNumber(int num)
 {
-    int firstDigit = num / 100; 
-    int secondNumber = num / 10; 
-    return secondNumber - firstDigit  * 10;
+    int firstDigit = num / 100;
+    int secondNumber = num / 10;
+    return secondNumber - firstDigit * 10;
 }
 
 Console.WriteLine("Введите трехзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int result = SecondNumber(number);
-Console.WriteLine($"{number} -> {result}");
+if (number >= -999 && number <= 999)
+{
+    Console.WriteLine($"{number} -> {SecondNumber(number)}");
+}
+else
+    Console.WriteLine("Некоректный ввод.");
