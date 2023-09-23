@@ -13,7 +13,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 if (number % 2 == 0)
 {
-    Console.WriteLine(number + " -> да четное");
+    Console.WriteLine(number + " -> да");
 }
 else 
-    Console.WriteLine(number + " -> нет нечетное");
+    Console.WriteLine(number + " -> нет");
