@@ -19,11 +19,15 @@ int UserInput(string msg)
 {
     Console.Write(msg);
     int num = Convert.ToInt32(Console.ReadLine());
-    return num; 
+    return num;
 }
 
 int numberA = UserInput("Введите число: ");
 int numberB = UserInput("Введите степень: ");
+// Console.Write("Введите число: ");
+// int numberA = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите степень: ");
+// int numberB = Convert.ToInt32(Console.ReadLine());
 
 int res = ErectDegree(numberA, numberB);
 
