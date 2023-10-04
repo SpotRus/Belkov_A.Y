@@ -47,6 +47,9 @@ int[] array = CreataArrarRange(5, -10, 10);
 
 int number = UserInput("Введите число: ");
 
+Console.WriteLine();
+Console.Write($"{number}; массив ");
+
 PrintArray(array);
 
 bool findNumber = FindNumber(array, number);
