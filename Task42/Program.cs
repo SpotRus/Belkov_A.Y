@@ -6,9 +6,9 @@
 // 13 -> 1101
 // 2 -> 10
 
-int GetUserInput(string message)
+int GetUserInput(string msg)
 {
-    Console.Write($"{message}");
+    Console.Write($"{msg}");
     int quarter = Convert.ToInt32(Console.ReadLine());
     return quarter;
 }
