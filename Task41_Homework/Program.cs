@@ -15,14 +15,14 @@ int EnteringMNumbers(string msg)
 
 int[] PositiveNumbers(int num)
 {
-    int count = 1;
+    // int count = 1;
     int usNum = 0;
     int[] arr = new int[num];
     for (int i = 0; i < num; i++)
     {
-        usNum = EnteringMNumbers($"Введите число № {count}: ");
+        usNum = EnteringMNumbers($"Введите число № {i + 1}: ");
         arr[i] = usNum;
-        count++;
+        // count++;
         Console.WriteLine();
     }
     return arr;
@@ -42,7 +42,7 @@ int CheckingPositiveNumbers(int[] arr)
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] > 0) count++;
+        if (arr[i] > 0) count++;
     }
     return count;
 }
